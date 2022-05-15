@@ -32,7 +32,7 @@ namespace Mediapipe.Unity
       new ResolutionStruct(640, 480, 30),
       new ResolutionStruct(848, 480, 30),
       new ResolutionStruct(960, 540, 30),
-      new ResolutionStruct(1280, 720, 30),
+      new ResolutionStruct(1280, 720, 15),
       new ResolutionStruct(1600, 896, 30),
       new ResolutionStruct(1920, 1080, 30),
     };
