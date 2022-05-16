@@ -35,42 +35,84 @@ namespace Mediapipe.Unity
       All = 127,
     }
 
-    private const int _LandmarkCount = 33;
+    // private const int _LandmarkCount = 33;
+    // private static readonly int[] _LeftLandmarks = new int[] {
+    //   1, 2, 3, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31
+    // };
+    // private static readonly int[] _RightLandmarks = new int[] {
+    //   4, 5, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32
+    // };
+    // private static readonly List<(int, int)> _Connections = new List<(int, int)> {
+    //   // Left Eye
+    //   (0, 1),
+    //   (1, 2),
+    //   (2, 3),
+    //   (3, 7),
+    //   // Right Eye
+    //   (0, 4),
+    //   (4, 5),
+    //   (5, 6),
+    //   (6, 8),
+    //   // Lips
+    //   (9, 10),
+    //   // Left Arm
+    //   (11, 13),
+    //   (13, 15),
+    //   // Left Hand
+    //   (15, 17),
+    //   (15, 19),
+    //   (15, 21),
+    //   (17, 19),
+    //   // Right Arm
+    //   (12, 14),
+    //   (14, 16),
+    //   // Right Hand
+    //   (16, 18),
+    //   (16, 20),
+    //   (16, 22),
+    //   (18, 20),
+    //   // Torso
+    //   (11, 12),
+    //   (12, 24),
+    //   (24, 23),
+    //   (23, 11),
+    //   // Left Leg
+    //   (23, 25),
+    //   (25, 27),
+    //   (27, 29),
+    //   (27, 31),
+    //   (29, 31),
+    //   // Right Leg
+    //   (24, 26),
+    //   (26, 28),
+    //   (28, 30),
+    //   (28, 32),
+    //   (30, 32),
+    // };
+
+    private const int _LandmarkCount = 29;
     private static readonly int[] _LeftLandmarks = new int[] {
-      1, 2, 3, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31
+      1, 3, 11, 13, 15, 23, 25, 27,
     };
     private static readonly int[] _RightLandmarks = new int[] {
-      4, 5, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32
+      4, 6, 12, 14, 16, 24, 26, 28
     };
     private static readonly List<(int, int)> _Connections = new List<(int, int)> {
       // Left Eye
       (0, 1),
-      (1, 2),
-      (2, 3),
-      (3, 7),
+      (1, 3),
       // Right Eye
       (0, 4),
-      (4, 5),
-      (5, 6),
-      (6, 8),
+      (4, 6),
       // Lips
-      (9, 10),
       // Left Arm
       (11, 13),
       (13, 15),
       // Left Hand
-      (15, 17),
-      (15, 19),
-      (15, 21),
-      (17, 19),
       // Right Arm
       (12, 14),
       (14, 16),
       // Right Hand
-      (16, 18),
-      (16, 20),
-      (16, 22),
-      (18, 20),
       // Torso
       (11, 12),
       (12, 24),
@@ -79,15 +121,9 @@ namespace Mediapipe.Unity
       // Left Leg
       (23, 25),
       (25, 27),
-      (27, 29),
-      (27, 31),
-      (29, 31),
       // Right Leg
       (24, 26),
       (26, 28),
-      (28, 30),
-      (28, 32),
-      (30, 32),
     };
 
     public override bool isMirrored

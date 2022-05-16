@@ -6,11 +6,18 @@ using System.Runtime.InteropServices;
 
 public class FPSCalculator : MonoBehaviour
 {
+  [DllImport("TestDll")]
+  public static extern int add(int num1, int num2);
+  [DllImport("TestDll")]
+  public static extern int multiply(int num1, int num2);
+  [DllImport("TestDll")]
+  public static extern int substract(int num1, int num2);
+  [DllImport("TestDll")]
+  public static extern int divide(int num1, int num2);
+  // private const string DllFilePath = @"C:\Users\John\source\repos\Dll2\Debug\Dll2.dll";
 
-  private const string DllFilePath = @"C:\Users\John\source\repos\Dll2\Debug\Dll2.dll";
-
-  [DllImport(DllFilePath, CallingConvention = CallingConvention.Cdecl)]
-  private extern static int test(int number);
+  // [DllImport(DllFilePath, CallingConvention = CallingConvention.Cdecl)]
+  // private extern static int test(int number);
 
 
   public int fpsTarget;  //通常設30 ~ 60
@@ -49,8 +56,13 @@ public class FPSCalculator : MonoBehaviour
     if (pointList.transform.GetChild(15) != null)
     {
       position_text.text = nose.transform.position.x.ToString("0.0") + ", " + nose.transform.position.y.ToString("0.0") + ", " + nose.transform.position.z.ToString("0.0");
+      //position_text.text = add(frames, frames).ToString();
     }
-    Debug.Log(test(3));
+    else
+    {
+      position_text.text = add(frames, frames).ToString();
+    }
+    //Debug.Log(add(3, 2));
   }
 
   void OnGUI()
