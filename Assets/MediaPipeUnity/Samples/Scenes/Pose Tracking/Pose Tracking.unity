@@ -751,6 +751,8 @@ MonoBehaviour:
   fpsTarget: 500
   updateInterval: 1
   FPS_text: {fileID: 1838061927}
+  position_text: {fileID: 0}
+  pointList: {fileID: 1493563923}
 --- !u!1 &356817659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,6 +1985,12 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!1 &1493563923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1915238444563462411, guid: 4418f6a92856c5b51b58a36e3be7ed5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1737185253}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1514445398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2198,7 +2206,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1737185253}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1493563923}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39bac9dd52c31ae7aa01a7383bc44853, type: 3}
