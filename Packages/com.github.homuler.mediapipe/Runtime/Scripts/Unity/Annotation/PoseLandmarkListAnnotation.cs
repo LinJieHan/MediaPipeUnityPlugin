@@ -257,6 +257,22 @@ namespace Mediapipe.Unity
 
     private void ApplyMask(BodyParts mask)
     {
+      _landmarkListAnnotation[2].SetActive(false);
+      _landmarkListAnnotation[7].SetActive(false);
+      _landmarkListAnnotation[5].SetActive(false);
+      _landmarkListAnnotation[8].SetActive(false);
+      _landmarkListAnnotation[9].SetActive(false);
+      _landmarkListAnnotation[10].SetActive(false);
+      _landmarkListAnnotation[18].SetActive(false);
+      _landmarkListAnnotation[20].SetActive(false);
+      _landmarkListAnnotation[22].SetActive(false);
+      _landmarkListAnnotation[21].SetActive(false);
+      _landmarkListAnnotation[19].SetActive(false);
+      _landmarkListAnnotation[17].SetActive(false);
+      _landmarkListAnnotation[29].SetActive(false);
+      _landmarkListAnnotation[30].SetActive(false);
+      _landmarkListAnnotation[31].SetActive(false);
+      _landmarkListAnnotation[32].SetActive(false);
       if (mask == BodyParts.All)
       {
         return;

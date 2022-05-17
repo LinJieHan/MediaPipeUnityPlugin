@@ -56,7 +56,7 @@ public class FPSCalculator : MonoBehaviour
     if (pointList.transform.GetChild(15) != null)
     {
       position_text.text = nose.transform.position.x.ToString("0.0") + ", " + nose.transform.position.y.ToString("0.0") + ", " + nose.transform.position.z.ToString("0.0");
-      //position_text.text = add(frames, frames).ToString();
+      position_text.text = add(frames, frames).ToString();
     }
     else
     {
